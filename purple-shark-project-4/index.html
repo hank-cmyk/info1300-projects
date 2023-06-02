@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intercooperative Union</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+  <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"> </script>
+  <script src="scripts/co-op.js" type="text/javascript"> </script>
+  <script src="scripts/validation.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>Intercooperative Union — Cornell University</h1>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="#" id="co-opNav">Co-ops<span class="downCaret" id = "caret">&#x25BC;</span></a>
+
+            <ul id="co-opDropdown" class="dropdown hidden">
+              <li><a href="whitby.html">Prospect of Whitby</a></li>
+              <li><a href="660.html">660 Stewart</a></li>
+              <li><a href="triphammer.html">Triphammer Cooperative</a></li>
+              <li><a href="voncramm.html">Von Cramm Hall</a></li>
+              <li><a href="wait-ave.html">Wait Avenue Cooperative</a></li>
+              <li><a href="wait-terrace.html">Wait Terrace</a></li>
+              <li><a href="wari.html">Wari Cooperative</a></li>
+              <li><a href="watermargin.html">Watermargin</a></li>
+              <li><a href="cayuga-lodge.html">Cayuga Lodge</a></li>
+            </ul>
+
+        </li>
+        <li class="liLong"><a href="events-photos.html">Events and Photos</a></li>
+    </ul>
+    </nav>
+
+    <hr/>
+
+</header>
+
+<div class= "content">
+<main>
+    <h2> Intercooperative Union </h2>
+
+    <div class = "row">
+    <figure>
+        <!-- Source: https://living.cornell.edu/live/wheretolive/co-ops/660stewart.cfm -->
+        <img src="images/660.png" alt="660 Cooperative">
+        <figcaption> Source: <cite><a href="https://living.cornell.edu/live/wheretolive/co-ops/660stewart.cfm"> www.living.cornell.edu</a></cite></figcaption>
+    </figure>
+
+    <div class = "column">
+    <p> The Intercooperative Union (ICU) is an organization that unites all 9 cooperative (co-op) houses on Cornell University's campus. They hold bi-weekly meetings with representatives from every co-op. They discuss topics such as intercooperative unity, events, Constitutional ammendments, and University relationships.</p>
+
+    <p> For more information, please email <strong>co-ops@cornell.edu</strong>.</p>
+
+    <h3> Moseying </h3>
+      <p> "Mosey" is the process in order to join a co-op. Mosey happens every semester. It involves the open house and co-op-specific events in order to get to know the co-op and for the co-op to get to know you. Competitiveness depends on the number of openings at each house, each semester. Each co-op has a different specific application process.</p>
+    </div>
+    </div>
+
+    <div id="questions">
+      <h3> Questions? </h3>
+        <p>Please send us any general questions you have about the ICU or about the overall mosey process!</p>
+        <p><em>Specific questions about a particular co-op's process or house should be directed to the co-op in question. </em></p> <p><em>Contact information can be found in co-op's individual pages.</em></p>
+        <div class="form">
+          <form id="feedbackForm" action="submitAndEmailSendGrid.php" method="post" novalidate>
+            <p>
+              <label for="name" class="title">Name: <strong>*</strong></label></p>
+              <p><input type="text" id="name" name="name" required minlength="1" /></p>
+              <span class="errorContainer hidden" id="nameError">
+                Name is required.
+              </span>
+
+              <p><label for="email" class="title">Email: <strong>*</strong></label></p>
+              <p><input type="email" id="email" name="email" required minlength="1" /></p>
+              <span class="errorContainer hidden" id="emailError">
+                A valid email is required.
+              </span>
+              <p>
+              <span class="title">Are you interested in mosey and would like to be sent email updates when mosey starts? <strong>*</strong></span></p>
+              <p><input type="radio" name="attend" id="Yes" value="Yes" required />
+              <label for="Yes">Yes</label>
+              <input type="radio" name="attend" id="No" value="No" required />
+
+              <label for="No">No</label>
+            </p>
+              <span class="errorContainer hidden" id="attendError">
+                An option is required to be selected.
+              </span>
+            <!-- <p>
+              <label for="feedback" class="title">Feedback:</label></p>
+              <p><textarea id="feedback" name="feedback" maxlength="200" rows="5" required></textarea>
+            </p> -->
+
+            <!-- <p><label for="enjoy" class="title">What information about the festival was useful or enjoyable to learn about on this website?</label></p>
+            <p><input type="text" id="enjoy" name="enjoy"  minlength="1" maxlength="1500"  /></p> -->
+
+            <p>
+              <label for="enjoy" class="title">Questions or concerns:</label></p>
+              <p><textarea id="enjoy" name="enjoy" minlength="1" maxlength="1500" rows="5"></textarea>
+            </p>
+            <p><strong>*</strong> = required</p>
+            <p>
+              <input type="submit" value="Submit" id="submit" />
+            </p>
+          </form>
+        </div>
+      </div>
+
+</main>
+</div>
+
+
+</body>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events and Photos</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+  <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"> </script>
+  <script src="scripts/co-op.js" type="text/javascript"> </script>
+</head>
+
+<body>
+    <!-- TODO get the names of the pages when others do them
+        get names of officers -->
+<header>
+    <h1>Intercooperative Union — Cornell University</h1>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="#" id="co-opNav">Co-ops<span class="downCaret" id = "caret">&#x25BC;</span></a>
+
+            <ul id="co-opDropdown" class="dropdown hidden">
+              <li><a href="whitby.html">Prospect of Whitby</a></li>
+              <li><a href="660.html">660 Stewart</a></li>
+              <li><a href="triphammer.html">Triphammer Cooperative</a></li>
+              <li><a href="voncramm.html">Von Cramm Hall</a></li>
+              <li><a href="wait-ave.html">Wait Avenue Cooperative</a></li>
+              <li><a href="wait-terrace.html">Wait Terrace</a></li>
+              <li><a href="wari.html">Wari Cooperative</a></li>
+              <li><a href="watermargin.html">Watermargin</a></li>
+              <li><a href="cayuga-lodge.html">Cayuga Lodge</a></li>
+            </ul>
+
+        </li>
+        <li class="liLong"><a href="events-photos.html">Events and Photos</a></li>
+    </ul>
+    </nav>
+
+    <hr/>
+
+</header>
+
+<div class= "content">
+<main>
+  <div class="row" id="eventsPhotos">
+    <div class="column">
+      <div class="events-style"><h2> Events </h2></div>
+      <div class = "column">
+        <div class = "events-list">
+          <div class = "events1">
+            <h3> 11/10</h3>
+              <ul>
+                <li> <em>All Co-ops</em>: Open House, 1-5pm
+              </ul>
+            <h3> 11/11</h3>
+              <ul>
+                <li> <em>Whitby</em>: Cozy Collage Colloqium, 8-10pm
+                <li> <em>Watermargin</em>: Game Nite, 7-9pm
+              </ul>
+            <h3> 11/12</h3>
+              <ul>
+                <li> <em>Von Cramm</em>: Shower Concert, 9-11pm
+              </ul>
+            <h3> 11/13</h3>
+              <ul>
+                <li> <em>660</em>: Garlic (Is Good As 10 Mothers) Night
+                <li> <em>Triphammer</em>: Spa Night & Demonology, 9-11pm
+              </ul>
+            <h3> 11/14</h3>
+              <ul>
+                <li> <em>Whitby</em>: Dessert Potluck, 8-10pm
+                <li> <em>Watermargin</em>: Wine and Paint
+              </ul>
+            <h3> 11/15</h3>
+              <ul>
+                <li><em>660</em>: Community Dinner
+                <li><em>Von Cramm</em>: Fireside Chats, 9-11pm
+              </ul>
+            <h3> 11/16</h3>
+              <ul>
+                <li> <em>Whitby</em>: Breakfast at Whitby, 10am-12pm
+                <li> <em>Triphammer</em>: Capture the Flag Picnic, 11am-1pm
+                <li> <em>Watermargin</em>: Brunch, 12-2pm
+              </ul>
+          </div>
+          <div class = "events2">
+            <h3> 11/17</h3>
+              <ul>
+                <li> <em>Von Cramm</em>: Chopped, 12-2pm
+                <li> <em>Triphammer</em>: Community Service, 3-5pm
+              </ul>
+            <h3> 11/18</h3>
+              <ul>
+                <li> <em>660</em>: Game Night
+                <li> <em>Von Cramm</em>: Spuds & Suds, 8-10pm
+              </ul>
+            <h3> 11/19</h3>
+              <ul>
+                <li> <em>Triphammer</em>: Cozy Trivia & Baking in PJs, 8-10pm
+                <li> <em>Whitby</em>: Black Tie Boardgames, 8-10pm
+                <li> <em>Watermargin</em>: Watermargin Doc Screening, 7-9pm
+              </ul>
+            <h3> 11/20</h3>
+              <ul>
+                <li> <em>Whitby</em>: Fireside Chat (& pani puri), 8-10 pm
+              </ul>
+            <h3> 11/21</h3>
+              <ul>
+                <li> <em>660</em>: Movie Night
+                <li> <em>Triphammer</em>: Collage Night, 8-10pm
+                <li> <em>Watermargin</em>: Food Art, 7-9pm
+              </ul>
+            <h3> 11/22</h3>
+              <ul>
+                <li> <em>660</em>: Karaoke Party
+              </ul>
+            <h3> 11/23</h3>
+              <ul>
+                <li> <em>Von Cramm</em>: Fermentation Station, 12-3pm
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery" >
+      <div class= "rowc">
+        <div class="column" id="backButton"><button>&lt;</button></div>
+        <div class="column" id="galleryColumn">
+
+          <figure id="first-photo">
+            <img alt="Creative House Event at Watermargin" src="images/watermargin-creativehouse.jpeg"/>
+            <figcaption><div class="gallery-caption">Creative House Event at <strong>Watermargin</strong></div></figcaption>
+          </figure>
+
+          <figure class="hidden" id="second-photo">
+            <img alt="Wine and Cheese Event at Watermargin" src="images/watermargin-wineandcheese.jpeg"/>
+            <figcaption><div class="gallery-caption">Wine and Cheese Event at <strong>Watermargin</strong></div></figcaption>
+          </figure>
+
+          <figure class="hidden" id="third-photo">
+            <img alt="Housemates Photo from 660" src="images/660-housemates.jpg"/>
+            <figcaption><div class="gallery-caption">Housemates Photo from <strong>660</strong></div></figcaption>
+          </figure>
+        </div>
+
+        <div class="column" id="nextButton"><button>&gt;</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a group!</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css"/>
+  <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"> </script>
+  <script src="scripts/validation.js" type="text/javascript"> </script>
+</head>
+
+<body>
+<header>
+    <h1>Find a group to go with!</h1>
+</header>
+
+<div class="content">
+    <aside>
+        <h3> Helpful Links</h3>
+        <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a>
+            <li><a href="route.html">How can I get there?</a>
+            <li><a href="do.html">What can I do there?</a>
+            <li><a href="others.html">What have others said?</a>
+            <li><a href="form.html">Find a group to go with!</a>
+        </ul>
+        </nav>
+    </aside>
+<main>
+    <div class = "form-p">
+    <p>Do you want to go to AppleFest with a group of people? Fill out the form below to find others who'd like to go!</p>
+    </div>
+
+
+    <form id="request-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+    <!-- name -->
+        <div class="feedback-style">
+    <div id="feedback-name" class="feedback hidden">*Please enter a valid name</div>
+        </div>
+    <div class="input-style">
+    <div class="row">
+    <label for="request-name">
+        Name: </label>
+    <input id="request-name" type = "text" name = "name" required/>
+    </div>
+    </div>
+
+    <!-- email -->
+        <div class="feedback-style">
+    <div id="feedback-email" class="feedback hidden">*Please enter a valid email</div>
+        </div>
+    <div class="input-style">
+    <div class="row">
+    <label for="request-email">
+        Email: </label>
+    <input id="request-email" type = "email" name = "email" required/>
+    </div>
+    </div>
+
+    <!-- year radio buttons -->
+    <div id="feedback-year" class="feedback hidden">
+         <div class="feedback-style">
+		*Please select one year
+        </div>
+    </div>
+
+    <div class="input-style">
+    <div class="buttons">
+        <div class="button-label">
+    <label> Year: </label>
+        </div>
+
+    <div class="year-label">
+     <input id="request-freshman" type="radio" name="year" value="freshman">
+    	<label for="request-freshman">Freshman</label>
+    </div>
+
+    <div class="year-label">
+     <input id="request-sophomore" type="radio" name="year" value="sophomore">
+    	<label for="request-sophomore">Sophomore</label>
+    </div>
+
+    <div class="year-label">
+     <input id="request-junior" type="radio" name="year" value="junior">
+    	<label for="request-junior">Junior</label>
+    </div>
+
+    <div class="year-label">
+     <input id="request-senior" type="radio" name="year" value="senior">
+    	<label for="request-senior">Senior</label>
+    </div>
+
+    </div>
+    </div>
+    <!-- end of year radio buttons -->
+
+    <!-- day checkboxes -->
+    <div id="feedback-day" class="feedback hidden">
+         <div class="feedback-style">
+		*Please check at least one day
+        </div>
+	</div>
+    <div class="input-style">
+    <div class="checkbox">
+        <div class="checkbox-label">
+    <label for = "request-friday">
+        Planned Day(s) of Visit: </label>
+        </div>
+
+	<div class="day-label">
+	<input id="request-friday" type="checkbox" name="friday" value = "friday"/>
+	   <label for="request-friday">Friday, 9/27</label>
+    </div>
+
+    <div class="day-label">
+    <input id="request-saturday" type="checkbox" name="saturday" value = "saturday"/>
+       <label for="request-saturday">Saturday, 9/28</label>
+    </div>
+
+    <div class="day-label">
+    <input id="request-sunday" type="checkbox" name="sunday" value = "sunday"/>
+       <label for="request-sunday">Sunday, 9/29</label>
+    </div>
+
+    </div>
+    </div>
+    <!-- end of day checkboxes -->
+
+    <!-- transporation buttons -->
+    <div id="feedback-transport" class="feedback hidden">
+         <div class="feedback-style">
+		*Please select one method of transportation
+        </div>
+    </div>
+
+    <div class="input-style">
+    <div class="buttons">
+        <div class="button-label">
+    <label> Preferred Method of Transportation: </label>
+        </div>
+
+    <div class="transport-label">
+     <input id="request-bus" type="radio" name="transport" value="bus">
+    	<label for="request-bus">Bus (TCAT)</label>
+    </div>
+
+    <div class="transport-label">
+     <input id="request-car" type="radio" name="transport" value="car">
+    	<label for="request-car">Car</label>
+    </div>
+
+    <div class="transport-label">
+     <input id="request-walking" type="radio" name="transport" value="walking">
+    	<label for="request-walking">Walking</label>
+    </div>
+
+    <div class="transport-label">
+     <input id="request-other" type="radio" name="transport" value="other">
+    	<label for="request-other">Other</label>
+    </div>
+
+    </div>
+    </div>
+    <!-- end transport buttons -->
+
+    <!-- submit -->
+    <div class="submit">
+    <input id = "submit" type = "submit" value = "Find a group!"/>
+    </div>
+
+    </form>
+
+</main>
+    <div class = "form-photos">
+        <figure>
+            <!-- Source: https://www.downtownithaca.com/apple-harvest-festival  -->
+            <img src="images/AF-group.png" alt="Group of people at AppleFest with caramel apples">
+            <figcaption> Source: <cite><a href="https://www.downtownithaca.com/apple-harvest-festival/">www.downtownithaca.com/apple-harvest-festival</a></cite></figcaption>
+        </figure>
+
+        <figure>
+            <!-- Source: https://www.downtownithaca.com/apple-harvest-festival  -->
+            <img src="images/AF-donuts.png" alt="Donuts at AppleFest">
+            <figcaption> Source: <cite><a href="https://www.downtownithaca.com/apple-harvest-festival/">www.downtownithaca.com/apple-harvest-festival</a></cite></figcaption>
+        </figure>
+
+        <figure>
+            <!-- Source: https://www.downtownithaca.com/apple-harvest-festival  -->
+            <img src="images/AF-second-group.png" alt="Group of people at AppleFest with mac and cheese">
+            <figcaption> Source: <cite><a href="https://www.downtownithaca.com/apple-harvest-festival/">www.downtownithaca.com/apple-harvest-festival</a></cite></figcaption>
+        </figure>
+    </div>
+
+</div>
+
+</body>
