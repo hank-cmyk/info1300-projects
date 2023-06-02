@@ -1,0 +1,171 @@
+body {
+    background-color:#200126;
+    font-family: "Monaco", monospace;
+    color: #9da2a2;
+    margin: 0 auto;
+    width: 950px;
+}
+
+header{
+    text-align: center;
+}
+
+a{
+    color: #009c7b;
+    text-decoration: none;
+}
+
+h1, h2, h3, h3, h4, h5{
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Bradley Hand", fantasy;
+}
+
+h1{
+     font-family: "Chalkduster", fantasy;
+     font-size: 55pt;
+     color: #ffffff;
+     text-align: center;
+     margin-bottom: 0px;
+     padding: 3px 3px;
+     margin-top: 10px;
+
+ }
+
+ h2{
+     font-size: 20pt;
+     background-color: #480671;
+     color: #9958c2;
+     margin-bottom: 0px;
+
+ }
+
+ h3 {
+     font-size: 17pt;
+     background-color: #004926;
+     margin-top: 0px;
+     margin-bottom: 10px;
+ }
+
+ h2, h3{
+     text-align: center;
+     padding: 2px;
+ }
+
+h4 {
+     text-decoration: underline;
+     font-size: 16pt;
+     margin-bottom: 2px;
+     margin-top: 0px;
+     color:#542075;
+ }
+
+ blockquote {
+     font-size: 17pt;
+     font-family: cursive;
+     font-style: normal;
+     margin-top: 0pt;
+
+ }
+
+h3, h4, h5,blockquote{
+    color: #9958c2;
+ }
+
+
+hr{
+     border-top-style: dashed;
+     border-color: #009c7b;
+     border-width: thick;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border-bottom: none;
+     border-left: none;
+     border-right: none;
+ }
+
+p, ul, ol, figcaption{
+    font-size: 11pt;
+    margin-top: 0px;
+}
+
+ul {
+     list-style-type: circle;
+ }
+
+img{
+     border: 4px dashed #009c7b;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 10pt;
+     margin-top: 10pt;
+ }
+
+figcaption{
+     font-family: "Comic Sans MS", sans-serif;
+     text-align: center;
+     color: #009c7b;
+ }
+
+.quotelist ul li{
+    padding: 3.5px;
+
+}
+
+nav li{
+    display: inline-block;
+    margin-top: 0px;
+    padding: 5px;
+    text-align: center;
+    border-style: solid;
+    border-color: #542075;
+    border-width: 2px;
+    font-size: 9.5pt;
+    margin-bottom: 0px;
+}
+
+nav ul{
+    padding: 0px;
+}
+
+a:hover{
+    color: white;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.box{
+    align-items: center;
+}
+
+h5 {
+    font-size: 17pt;
+    margin-bottom: 3px;
+    margin-left: 50px;
+    font-style: italic;
+}
+
+.stanza ul li{
+    list-style-type: none;
+    font-size: 10.5pt;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
